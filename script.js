@@ -12,7 +12,13 @@ addTaskButton.addEventListener("click", function () {
     const taskEnergy = taskEnergySelect.value;
     const taskTime = taskTimeInput.value;
 
-    console.log("Task Name:", taskName);
-    console.log("Energy Required:", taskEnergy);
-    console.log("Time Required (minutes):", taskTime);
+    const task = {
+    name: taskName,
+    energy: taskEnergy,
+    time: Number(taskTime),
+    completed: false
+};
+
+console.log(task);
+
 });
