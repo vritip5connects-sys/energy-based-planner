@@ -11,24 +11,31 @@
 
 
     <!--Add Task Section-->
+<section>
 
-    <section>
-        <h2>Add a Task</h2>
+    <h2>Add a Task</h2>
 
-        <input type="text" placeholder="Task name"
-        <select>
-            <option value="">Energy required</option>
-            <option value="low">Low</option>
-            <option value="medium">Medium</option>
-            <option value="high">High</option>
-        </select>
+    <input type="text" id="taskName" placeholder="Task name" />
 
-        <select>
+    <select id="taskEnergy">
+    <option value="">Energy required</option>
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+    <option value="high">High</option>
+    </select>
 
-            <option value="">Time required</option>
-            <option value="15">15 minutes</option>
-            <option value="30">30 minutes</option>
-            <option value="60">60 minutes</option>
+    <input
+    type="number"
+    id="taskTime"
+    placeholder="Time required (minutes)"
+    min="1"
+    />
+
+    <button id="addTaskBtn">Add Task</button>
+</section>
+
+/>
+
 
         </select>
         <button>Add Task</button>
