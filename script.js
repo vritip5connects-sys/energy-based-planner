@@ -1,3 +1,6 @@
+const tasks = [];
+
+
 const taskNameInput = document.getElementById("taskName");
 const taskEnergySelect = document.getElementById("taskEnergy");
 const taskTimeInput = document.getElementById("taskTime");
@@ -19,6 +22,8 @@ addTaskButton.addEventListener("click", function () {
     completed: false
 };
 
-console.log(task);
+tasks.push(task);
+console.log("All tasks:", tasks);
+
 
 });
